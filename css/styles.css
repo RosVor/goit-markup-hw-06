@@ -752,17 +752,15 @@ margin-bottom: 8px;
   padding-left: 16px;
 }
 
-.modal-input::placeholder .modal-icon{
+.modal-input::placeholder{
   border-color: var(--main-button-color);
-  outline: var(--main-button-color);
-  fill:var(--main-button-color);
+
 }
 
-.modal-input:is(:hover,:focus) .modal-icon{
+.modal-input:is(:hover,:focus) + .modal-icon {
   border-color: var(--main-button-color);
   color: var(--main-button-color);
-  outline: var(--main-button-color);
-  fill:var(--main-button-color);
+  fill: var(--main-button-color);
 }
 
 .modal-icon {
