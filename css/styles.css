@@ -754,3 +754,8 @@ margin-bottom: 8px;
   border-color: var(--main-button-color);
   color: var(--main-button-color);
 }
+
+.modal-icon {
+  width: 18px; 
+  height: 24px;
+}
