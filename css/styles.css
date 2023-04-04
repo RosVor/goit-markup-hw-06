@@ -750,10 +750,6 @@ margin-bottom: 8px;
   padding-left: 16px;
 }
 
-/* .comment::placeholder{
-  padding-left: 16px;
-} */
-
 .modal-input::placeholder{
   border-color: var(--main-button-color);
 }
