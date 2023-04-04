@@ -744,6 +744,7 @@ margin-bottom: 8px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding-left: 38px;
+  outline: transparent;
 }
 
 .comment{
@@ -752,11 +753,15 @@ margin-bottom: 8px;
 
 .modal-input::placeholder{
   border-color: var(--main-button-color);
+  outline: var(--main-button-color);
+  fill:var(--main-button-color);
 }
 
 .modal-input:is(:hover,:focus) {
   border-color: var(--main-button-color);
   color: var(--main-button-color);
+  outline: var(--main-button-color);
+  fill:var(--main-button-color);
 }
 
 .modal-icon {
