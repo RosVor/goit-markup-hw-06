@@ -713,6 +713,7 @@ margin-bottom: 8px;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
   margin-top: 48px;
+  margin-bottom: 16px;
 }
 
 .modal-list{
@@ -721,12 +722,16 @@ margin-bottom: 8px;
   padding: 0;
 }
 
-.modal-item{
-  margin-top: 8px;
-}
-
 .modal-name{
-
+  margin-top: 8px;
+  margin-bottom: 4px;
+  display: inline-block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
 }
 
 .modal-input{
@@ -734,7 +739,6 @@ margin-bottom: 8px;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-top: 4px;
   /* padding-left: 16px; */
 }
 
