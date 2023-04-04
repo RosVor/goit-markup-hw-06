@@ -750,6 +750,7 @@ margin-bottom: 8px;
 
 .comment{
   padding-left: 16px;
+  height: 120px;
 }
 
 .modal-input::placeholder{
@@ -757,9 +758,12 @@ margin-bottom: 8px;
 
 }
 
-.modal-input:is(:hover,:focus) + .modal-icon {
+.modal-input:is(:hover,:focus) {
   border-color: var(--main-button-color);
   color: var(--main-button-color);
+}
+
+.modal-input:is(:hover,:focus) + .modal-icon {
   fill: var(--main-button-color);
 }
 
