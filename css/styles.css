@@ -489,7 +489,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon:is(:hover, :focus) {
-  background: var(--secondary-button-color);
   fill: var(--link-focus-color);
 }
 
