@@ -328,7 +328,7 @@
             </li>
             
           </ul>
-        </div>
+
         </section>
 
       </main>   
@@ -340,7 +340,7 @@
             <p class="footer-descr">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
           </div>
           <div class="footer-icon">
-            <p class="footer-icon-name">Social media</p>
+            <p class="footer-name">Social media</p>
             <ul class="footer-list-icon list">
               <li class="footer-soc-item">
                 <a href="" class="footer-soc-link link">
@@ -376,7 +376,26 @@
 
           </ul>
           </div>
-        </div>
+            <div class="footer-subscribe">
+              <form class="footer-form-subsc">
+              <p class="footer-name">Subscribe</p>
+              <label></label>
+              <div class="input-wrap">
+              <input 
+              name="email" 
+              type="email" 
+              class="footer-input" 
+              id="email"
+              placeholder="E-mail"
+              required>
+            </div>
+          </div>
+          <button class="footer-subsc-button" type="submit">Subscribe
+            <svg width= "24" height="24" class="footer-soc-icon">
+               <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+            </svg>
+         </button>
+        </form>
       </footer> 
 
       <div class="backdrop is-hidden" data-modal >
@@ -440,24 +459,36 @@
               </div>
             </li>
 
-          </ul>
-              <li class="modal-item">
+            <div class="modal-item">
                 <label class="modal-name" for="comment">
                   Comment
                 </label>
                 <textarea 
                 name="comment" 
                 id="comment" 
-                cols="30" 
-                rows="10"
                 class="modal-textarea"
-                placeholder="comment"></textarea>
+                placeholder="Text input"></textarea>
+                </div>
                     
-              </li>
-            <p>I accept the terms and conditions of the Privacy Policy</p>
-            <button type="submit" class="button-send">Send</button>
+                <div class="modal-item checkbox">
+                  <div class="input-wrap">
+                    <input 
+                    name="privacy"
+                    type="checkbox" 
+                    class="modal-checkbox visually-hidden" 
+                    id="privacy"
+                    required>
+
+                    <label class="modal-check-text" for="privacy">
+                      I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a>
+                      </label>
+                  </div>
+                </div> 
+              <div class="modal-button">
+              <button type="submit" class="modal-btn-send">Send</button>
+            </div>
+          </div>
           </form>
-        </div>
       </div>
 
   <script src="./js/modal.js"></script>
