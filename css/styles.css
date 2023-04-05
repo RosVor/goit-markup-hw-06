@@ -481,7 +481,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-soc-item {
   width: 40px;
   height: 40px;
-  
 }
 .footer-soc-icon {
   width: 24px;
@@ -504,8 +503,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--icon-background-color);
 }
 
-.footer-subscribe{
+
+.footer-form-subsc {
   margin-left: 80px;
+}
+.footer-subscribe{
+  display: flex;
 }
 
 .footer-input {
@@ -514,13 +517,23 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   width: 264px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--alternative-title-color);
+  outline: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
 }
 
-
+.footer-input::placeholder{
+  color: var(--alternative-title-color);
+}
 
 .footer-subsc-button{
   background: var(--main-button-color);
   border-radius: 4px;
+  border: 1px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -528,8 +541,17 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 8px 24px;
   gap: 16px;
   height: 40px;
+  fill: var(--alternative-title-color);
+  color: var(--alternative-title-color);
+  margin-left:24px;
+  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.footer-subsc-button:is(:hover, :focus) {
+  color: var(--main-button-color);
+  background: var(--secondary-button-color);
+}
 
 
 /* -------------------------PORTFOLIO---------------------------- */
@@ -713,9 +735,10 @@ margin-bottom: 8px;
   border-radius: 50%;
   padding: 0;
   background-color: var(--border-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
+
 }
 
 .modal-close-button:is(:hover, :focus){
@@ -806,6 +829,7 @@ margin-bottom: 8px;
   resize: none;
   padding: 8px 16px;
   outline: transparent;
+  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox{
@@ -818,6 +842,7 @@ margin-bottom: 8px;
   line-height: 14px;
   letter-spacing: 0.04em;
   color: var(--borders-icon-color);
+  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-check-text::before{
@@ -889,6 +914,7 @@ margin-bottom: 8px;
   border-radius: 4px;
   border: 1px;
   color: var(--alternative-title-color);
+  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-send:is(:hover, :focus) {
