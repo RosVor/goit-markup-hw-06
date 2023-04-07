@@ -817,6 +817,7 @@ margin-bottom: 8px;
   position: absolute;
   left: 16px;
   top: 50%;
+  bottom: 50%;
 }
 
 .modal-textarea {
