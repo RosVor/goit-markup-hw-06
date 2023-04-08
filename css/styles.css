@@ -587,7 +587,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 12px 24px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-list-item {
@@ -597,6 +597,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .button-portfolio:is(:hover, :focus) {
   color:var(--alternative-title-color);
   background-color: var(--main-button-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .prtf-row-list {
@@ -729,6 +730,7 @@ margin-bottom: 8px;
   border-radius: 4px;
   padding: 72px 24px 24px;
   background:var(--second-white);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-button{
@@ -743,7 +745,7 @@ margin-bottom: 8px;
   border-radius: 50%;
   padding: 0;
   background-color: var(--border-color);
-  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
 
@@ -763,6 +765,14 @@ margin-bottom: 8px;
   fill:var(--alternative-title-color);
 }
 
+.modal-form{
+  margin-bottom: 16px;
+}
+
+.modal-item{
+  margin-top: 8px;
+}
+
 .modal-title{
   font-weight: 500;
   font-size: 16px;
@@ -775,7 +785,6 @@ margin-bottom: 8px;
 
 
 .modal-name{
-  margin-top: 8px;
   margin-bottom: 4px;
   display: inline-block;
   font-weight: 400;
@@ -817,7 +826,7 @@ margin-bottom: 8px;
   position: absolute;
   left: 16px;
   top: 50%;
-  bottom: 50%;
+  transform:translateY(-50%);
 }
 
 .modal-textarea {
@@ -830,7 +839,7 @@ margin-bottom: 8px;
   resize: none;
   padding: 8px 16px;
   outline: transparent;
-  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox{
@@ -841,7 +850,7 @@ margin-bottom: 8px;
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: var(--borders-icon-color);
-  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox:checked + .modal-check-text::before{
@@ -904,21 +913,19 @@ margin-bottom: 8px;
 }
 
 .modal-btn-send{
-  align-items: flex-start;
   padding: 16px 32px;
-  gap: 10px;
   width: 105px;
-  background: var(--main-button-color);
+  background-color: var(--main-button-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   color: var(--alternative-title-color);
-  transition: color 250ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn-send:is(:hover, :focus) {
   color: var(--main-button-color);
-  background: var(--secondary-button-color);
+  background-color: var(--secondary-button-color);
 }
 .modal-button{
   text-align: center;
